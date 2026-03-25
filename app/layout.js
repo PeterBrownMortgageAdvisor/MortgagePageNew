@@ -1,5 +1,5 @@
-import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title: 'Peter Brown - The Mortgage Advisor',
