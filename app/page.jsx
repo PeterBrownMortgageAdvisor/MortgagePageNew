@@ -7,26 +7,30 @@ export default function MortgageBusinessWebsite() {
   const [submitting, setSubmitting] = useState(false);
   const [formError, setFormError] = useState('');
   const formAction = 'https://formsubmit.co/pjwb01@hotmail.co.uk';
-
   const services = [
     {
       title: 'First Time Purchases',
+      icon: '1️⃣',
       desc: 'Guidance for first-time buyers, repeat buyers, and clients moving home.'
     },
     {
       title: 'Refinancing',
+      icon: '£',
       desc: 'Review your current mortgage and explore options that may better fit your goals.'
     },
     {
       title: 'Buy-to-Let',
+      icon: '🏠',
       desc: 'Support for landlords and property investors looking to grow with confidence.'
     },
     {
       title: 'Remortgaging Advice',
+      icon: '🔄',
       desc: 'Clear advice on product transfers, rate changes, and timing your next move.'
     },
     {
       title: 'Insurance Review',
+      icon: '🛡️',
       desc: 'We will review your protection needs and discuss suitable insurance options as part of the process, at no cost.'
     }
   ];
@@ -91,7 +95,6 @@ export default function MortgageBusinessWebsite() {
       ? (principal * monthlyRate * Math.pow(1 + monthlyRate, totalPayments)) /
         (Math.pow(1 + monthlyRate, totalPayments) - 1)
       : 0;
-
   const formattedMonthlyPayment = monthlyPayment.toLocaleString('en-GB', {
     style: 'currency',
     currency: 'GBP',
@@ -148,15 +151,17 @@ export default function MortgageBusinessWebsite() {
                 <div className="text-lg font-semibold">Whole of Market Access</div>
                 <div className="mt-1 text-emerald-100">Access to a wide range of lenders and mortgage products</div>
               </div>
+
               <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
                 <div className="text-lg font-semibold">No Obligation Advice</div>
                 <div className="mt-1 text-emerald-100">Clear, honest guidance with no pressure to proceed</div>
               </div>
             </div>
+
           </div>
 
           <div className="flex items-center justify-center">
-            <div className="w-full max-w-lg rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-emerald-200">
+            <div className="w-full max-w-lg rounded-[2rem] bg-white p-6 shadow-2xl ring-1 ring-slate-200">
               <div className="mb-6 flex items-center justify-between">
                 <div>
                   <div className="text-sm font-medium text-emerald-600">Quick Enquiry</div>
@@ -166,7 +171,6 @@ export default function MortgageBusinessWebsite() {
                   Free Review
                 </div>
               </div>
-
               {submitted ? (
                 <div className="text-center p-6">
                   <div className="text-2xl font-semibold text-emerald-900">Thank you!</div>
@@ -210,33 +214,11 @@ export default function MortgageBusinessWebsite() {
                   <input type="hidden" name="_template" value="table" />
                   <input type="hidden" name="_captcha" value="true" />
 
-                  <input
-                    name="full_name"
-                    required
-                    className="rounded-2xl border border-emerald-200 px-4 py-3"
-                    placeholder="Full name"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    required
-                    className="rounded-2xl border border-emerald-200 px-4 py-3"
-                    placeholder="Email address"
-                  />
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    className="rounded-2xl border border-emerald-200 px-4 py-3"
-                    placeholder="Phone number"
-                  />
+                  <input name="full_name" required className="rounded-2xl border border-emerald-200 px-4 py-3" placeholder="Full name" />
+                  <input type="email" name="email" required className="rounded-2xl border border-emerald-200 px-4 py-3" placeholder="Email address" />
+                  <input type="tel" name="phone" required className="rounded-2xl border border-emerald-200 px-4 py-3" placeholder="Phone number" />
 
-                  <select
-                    name="enquiry_type"
-                    required
-                    defaultValue=""
-                    className="rounded-2xl border border-emerald-200 px-4 py-3"
-                  >
+                  <select name="enquiry_type" required defaultValue="" className="rounded-2xl border border-emerald-200 px-4 py-3">
                     <option value="" disabled>I’m interested in…</option>
                     <option>Buying a home</option>
                     <option>Refinancing</option>
@@ -244,18 +226,9 @@ export default function MortgageBusinessWebsite() {
                     <option>Remortgaging advice</option>
                   </select>
 
-                  <textarea
-                    name="message"
-                    rows={4}
-                    className="rounded-2xl border border-emerald-200 px-4 py-3"
-                    placeholder="Tell us a little about what you need"
-                  />
+                  <textarea name="message" rows={4} className="rounded-2xl border border-emerald-200 px-4 py-3" placeholder="Tell us a little about what you need" />
 
-                  <button
-                    type="submit"
-                    disabled={submitting}
-                    className="rounded-2xl bg-emerald-900 px-4 py-3 font-semibold text-white disabled:opacity-70"
-                  >
+                  <button type="submit" disabled={submitting} className="rounded-2xl bg-emerald-900 px-4 py-3 font-semibold text-white disabled:opacity-70">
                     {submitting ? 'Sending...' : 'Request a Callback'}
                   </button>
 
@@ -286,11 +259,10 @@ export default function MortgageBusinessWebsite() {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-emerald-200 transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <div className="mb-4 h-12 w-12 rounded-2xl bg-emerald-100" />
+            <div key={service.title} className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
+              <div className="mb-4 h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-xl">
+                {service.icon}
+              </div>
               <h3 className="text-xl font-semibold">{service.title}</h3>
               <p className="mt-3 leading-7 text-emerald-700">{service.desc}</p>
             </div>
@@ -311,19 +283,19 @@ export default function MortgageBusinessWebsite() {
             </p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-emerald-200">
+            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-slate-200">
               <div className="text-2xl font-bold">Quick, reliable updates</div>
               <p className="mt-3 text-emerald-700">You’ll always know where you stand, with clear communication and prompt responses throughout the process.</p>
             </div>
-            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-emerald-200">
+            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-slate-200">
               <div className="text-2xl font-bold">Guidance you can rely on</div>
               <p className="mt-3 text-emerald-700">I’ll explain your options clearly and help you choose what’s right for you, without jargon or confusion.</p>
             </div>
-            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-emerald-200">
+            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-slate-200">
               <div className="text-2xl font-bold">Clear next steps</div>
               <p className="mt-3 text-emerald-700">You’ll always know what happens next, with simple, guided steps from your first enquiry right through to completion.</p>
             </div>
-            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-emerald-200">
+            <div className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-slate-200">
               <div className="text-2xl font-bold">Working for you wherever in the UK you are based</div>
               <p className="mt-3 text-emerald-700">I support clients across the UK, offering flexible advice wherever you are and however you prefer to communicate.</p>
             </div>
@@ -338,7 +310,7 @@ export default function MortgageBusinessWebsite() {
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">A simple path from enquiry to completion</h2>
             <div className="mt-8 space-y-4">
               {steps.map((step, index) => (
-                <div key={step} className="flex items-start gap-4 rounded-[2rem] bg-white p-5 shadow-sm ring-1 ring-emerald-200">
+                <div key={step} className="flex items-start gap-4 rounded-[2rem] bg-white p-5 shadow-sm ring-1 ring-slate-200">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-emerald-900 text-sm font-bold text-white">
                     {index + 1}
                   </div>
@@ -371,7 +343,7 @@ export default function MortgageBusinessWebsite() {
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {testimonials.map((item) => (
-              <div key={item.name} className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-emerald-200">
+              <div key={item.name} className="rounded-[2rem] bg-emerald-50 p-6 ring-1 ring-slate-200">
                 <p className="text-lg leading-8 text-emerald-800">“{item.quote}”</p>
                 <div className="mt-6 font-semibold text-emerald-900">{item.name}</div>
               </div>
@@ -475,6 +447,7 @@ export default function MortgageBusinessWebsite() {
           <div className="max-w-3xl">
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">FAQs</div>
             <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Frequently asked questions</h2>
+            
           </div>
           <div className="mt-10 grid gap-4">
             {faqs.map((faq) => (
