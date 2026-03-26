@@ -165,7 +165,7 @@ export default function MortgageBusinessWebsite() {
   </div>
 
   <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-    Mortgage advice for purchasing - First Time Buyers, Remortgaging, and buy-to-let
+    Expert Mortgage Advice for First-Time Buyers, Remortgages & Buy-to-Let
   </h1>
 
   <p className="mt-6 max-w-xl text-lg leading-8 text-emerald-100">
