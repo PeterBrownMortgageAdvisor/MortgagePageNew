@@ -1,36 +1,43 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { BadgePoundSterling, ShieldCheck, RefreshCcw, Home, KeyRound, ArrowRight } from 'lucide-react';
 
 export default function MortgageBusinessWebsite() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [formError, setFormError] = useState('');
-  const formAction = 'https://formsubmit.co/pjwb01@hotmail.co.uk';
+  const formAction = 'https://formsubmit.co/ajax/pjwb01@hotmail.co.uk';
   const services = [
     {
       title: 'First Time Purchases',
-      icon: '1️⃣',
+      icon: KeyRound,
+      enquiry: 'Buying a home',
       desc: 'Guidance for first-time buyers, repeat buyers, and clients moving home.'
     },
     {
       title: 'Refinancing',
-      icon: '£',
+      icon: BadgePoundSterling,
+      enquiry: 'Refinancing',
       desc: 'Review your current mortgage and explore options that may better fit your goals.'
     },
     {
       title: 'Buy-to-Let',
-      icon: '🏠',
+      icon: Home,
+      enquiry: 'Investment property',
       desc: 'Support for landlords and property investors looking to grow with confidence.'
     },
     {
       title: 'Remortgaging Advice',
-      icon: '🔄',
+      icon: RefreshCcw,
+      enquiry: 'Remortgaging advice',
       desc: 'Clear advice on product transfers, rate changes, and timing your next move.'
     },
     {
       title: 'Insurance Review',
-      icon: '🛡️',
+      icon: ShieldCheck,
+      enquiry: 'Remortgaging advice',
       desc: 'We will review your protection needs and discuss suitable insurance options as part of the process, at no cost.'
     }
   ];
@@ -209,8 +216,6 @@ export default function MortgageBusinessWebsite() {
                   className="grid gap-4"
                 >
                   <input type="hidden" name="_subject" value="New mortgage website enquiry" />
-                  <input type="hidden" name="_replyto" value="email" />
-                  <input type="hidden" name="_url" value="https://peterbrownmortgageadvisor.co.uk" />
                   <input type="hidden" name="_template" value="table" />
                   <input type="hidden" name="_captcha" value="true" />
 
@@ -257,16 +262,29 @@ export default function MortgageBusinessWebsite() {
             Clear, straightforward advice tailored to you—so you understand your options and feel confident in your next step.
           </p>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {services.map((service) => (
-            <div key={service.title} className="rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
-              <div className="mb-4 h-12 w-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-xl">
-                {service.icon}
-              </div>
-              <h3 className="text-xl font-semibold">{service.title}</h3>
-              <p className="mt-3 leading-7 text-emerald-700">{service.desc}</p>
-            </div>
-          ))}
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+          {services.map((service) => {
+            const Icon = service.icon;
+            return (
+              <motion.a
+                key={service.title}
+                href={`#contact`}
+                whileHover={{ y: -8, scale: 1.02 }}
+                transition={{ type: 'spring', stiffness: 260, damping: 18 }}
+                className="group rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-slate-200 block hover:shadow-xl"
+              >
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-900 transition group-hover:scale-110 group-hover:bg-emerald-200">
+                  <Icon className="h-6 w-6" strokeWidth={2.2} />
+                </div>
+                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <p className="mt-3 leading-7 text-emerald-700">{service.desc}</p>
+                <div className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-emerald-800">
+                  Enquire about this service
+                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                </div>
+              </motion.a>
+            );
+          })}
         </div>
       </section>
 
@@ -484,4 +502,5 @@ export default function MortgageBusinessWebsite() {
       </footer>
     </div>
   );
+}
 }
