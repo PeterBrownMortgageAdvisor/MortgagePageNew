@@ -159,32 +159,34 @@ export default function MortgageBusinessWebsite() {
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700" />
         <div className="absolute inset-0 opacity-10 [background-image:radial-gradient(circle_at_top_right,white,transparent_35%),radial-gradient(circle_at_bottom_left,white,transparent_25%)]" />
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
-          <div className="max-w-2xl text-white">
-            <div className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm">
-              Trusted Mortgage Advisor in the UK
-            </div>
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-  Mortgage advice for purchasing - First Time Buyers, Remortgaging, and buy-to-let
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-emerald-100">
-              Whether you're buying your first home, remortgaging, or exploring buy-to-let options, I’m here to guide you every step of the way with clear advice, honest support, and a straightforward process.
-            <p className="mt-4 text-lg text-emerald-100">
-  Helping clients across the UK with clear, straightforward mortgage advice tailored to your needs.
-</p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#contact"
-                className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-emerald-900 shadow-lg transition hover:-translate-y-0.5"
-              >
-                Book a Free Consultation
-              </a>
-              <a
-                href="#services"
-                className="rounded-2xl border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
-              >
-                Explore Services
-              </a>
-            </div>
+         <div className="max-w-2xl text-white">
+  <div className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm">
+    Trusted Mortgage Advisor in the UK
+  </div>
+  <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+    Mortgage advice for purchasing - First Time Buyers, Remortgaging, and buy-to-let
+  </h1>
+  <p className="mt-6 max-w-xl text-lg leading-8 text-emerald-100">
+    Whether you're buying your first home, remortgaging, or exploring buy-to-let options, I’m here to guide you every step of the way with clear advice, honest support, and a straightforward process.
+  </p>
+  <p className="mt-4 text-lg text-emerald-100">
+    Helping clients across the UK with clear, straightforward mortgage advice tailored to your needs.
+  </p>
+  <div className="mt-8 flex flex-wrap gap-4">
+    <a
+      href="#contact"
+      className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-emerald-900 shadow-lg transition hover:-translate-y-0.5"
+    >
+      Book a Free Consultation
+    </a>
+    <a
+      href="#services"
+      className="rounded-2xl border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+    >
+      Explore Services
+    </a>
+  </div>
+</div>
             <div className="mt-10 grid max-w-xl grid-cols-1 gap-4 text-sm">
               <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
                 <div className="text-lg font-semibold">Whole of Market Access</div>
