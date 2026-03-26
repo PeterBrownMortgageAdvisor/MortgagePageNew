@@ -52,19 +52,19 @@ export default function MortgageBusinessWebsite() {
 
   const testimonials = [
     {
-      name: 'Sarah & James',
+      name: 'Sophie & Elliot',
       quote:
-        'The whole process felt simple and stress-free. We always knew what the next step was.'
+        'We can’t thank Peter enough and honestly couldn’t have done it without him. He was so thorough with everything. He responded to any concerns or questions so speedily (out of hours, when I did not expect a reply but he still did). He reassured us when we had concerns and made us feel so much more at ease and chilled out with the whole process. We are now moving into our dream home and he had a massive part to play in this. We couldn’t recommend him enough'
     },
     {
-      name: 'Priya R.',
+      name: 'A.Olszewska.',
       quote:
-        'Professional, responsive, and incredibly helpful in finding the right mortgage option for my refinance.'
+        'I wanted to take a moment to highly recommend Peter Brown as a mortgage advisor. Throughout the entire process of my mortgage, he demonstrated exceptional expertise, professionalism, and patience. From answering my countless questions to guiding me through complex paperwork, Peter made the entire experience as smooth and stress-free as possible. Not only was he always available to offer clear and helpful advice, but his deep understanding of the market helped me get a mortgage that perfectly suited my financial needs. I felt supported every step of the way, and I’m truly grateful for the care and attention I received. Thank you again, Peter, for all your help. I couldn’t have done it without you! I’m now the proud owner of my own home, and I couldn’t be more grateful. I really appreciate all your time, patience, and support.'
     },
     {
-      name: 'Daniel M.',
+      name: 'Aiste.',
       quote:
-        'Excellent service from start to finish. I would happily recommend this business to anyone buying a home.'
+        'Peter was absolutely fantastic to deal with! Super friendly, easy to talk to, and always happy to answer any questions I had. He made the whole mortgage process so simple and stress-free. Nothing was ever too much trouble — he really went above and beyond to get me the best deal and kept me updated the whole way through. It honestly felt like I was dealing with a friend who genuinely cared about helping me. Couldn’t recommend Peter highly enough — if you need a mortgage broker who actually listens and makes things easy, he’s your guy!'
     }
   ];
 
@@ -82,7 +82,7 @@ export default function MortgageBusinessWebsite() {
     {
       question: 'Do you charge for your advice?',
       answer:
-        'I offer a no obligation advice process, so you can explore your options and understand the next steps before deciding how you would like to proceed.'
+        'I offer a no obligation advice process, from start to finish, so you can explore your options and understand the next steps before deciding how you would like to proceed without the need to worry about costs.'
     },
     {
       question: 'Can you help if I am remortgaging?',
@@ -359,7 +359,7 @@ export default function MortgageBusinessWebsite() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl">
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-600">Testimonials</div>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">What clients might say about working with you</h2>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">What clients say about working with me</h2>
           </div>
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {testimonials.map((item) => (
