@@ -165,11 +165,11 @@ export default function MortgageBusinessWebsite() {
   </div>
 
   <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-    Expert Mortgage Advice for First-Time Buyers, Remortgages & Buy-to-Let
+    Expert Mortgage Advice for First-Time Buyers, Home-Movers, Remortgages & Buy-to-Let
   </h1>
 
   <p className="mt-6 max-w-xl text-lg leading-8 text-emerald-100">
-    Whether you're buying your first home, remortgaging, or exploring buy-to-let options, I’m here to guide you every step of the way with clear advice, honest support, and a straightforward process.
+    Whether you're buying your first home, next home, remortgaging, or exploring buy-to-let options, I’m here to guide you every step of the way with clear advice, honest support, and a straightforward process.
   </p>
 
   <p className="mt-4 text-lg text-emerald-100">
