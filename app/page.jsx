@@ -383,20 +383,49 @@ export default function MortgageBusinessWebsite() {
           </div>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-2">
-            <div className="rounded-[2rem] bg-white p-8 text-emerald-900 shadow-lg">
-              <div className="text-xl font-semibold">Business details</div>
-              <div className="mt-4 space-y-3 text-emerald-700">
-                <p>📞 +44 7594 869444</p>
-                <p>✉️ pjwb01@hotmail.co.uk</p>
-                <p>🕒 Mon–Fri, 9:00 AM–5:00 PM</p>
-                <p>
-                  📘 <a href="https://www.facebook.com/share/1ajhQ6pGb4/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="underline">Follow on Facebook</a>
-                </p>
-              </div>
-              <a href="mailto:pjwb01@hotmail.co.uk" className="mt-6 block w-full rounded-2xl bg-emerald-900 px-4 py-3 text-center font-semibold text-white">
-                Email Peter Brown
-              </a>
-            </div>
+           <div className="rounded-[2rem] bg-white p-8 text-emerald-900 shadow-lg">
+  <div className="text-xl font-semibold">Business details</div>
+
+  <div className="mt-4 space-y-3 text-emerald-700">
+    <p>📞 +44 7594 869444</p>
+    <p>✉️ pjwb01@hotmail.co.uk</p>
+    <p>🕒 Mon–Fri, 9:00 AM–5:00 PM</p>
+    <p>
+      📘 <a href="https://www.facebook.com/share/1ajhQ6pGb4/?mibextid=wwXIfr" target="_blank" rel="noreferrer" className="underline">
+        Follow on Facebook
+      </a>
+    </p>
+  </div>
+
+  <a
+    href="mailto:pjwb01@hotmail.co.uk"
+    className="mt-6 block w-full rounded-2xl bg-emerald-900 px-4 py-3 text-center font-semibold text-white"
+  >
+    Email Peter Brown
+  </a>
+
+  {/* Review QR Section */}
+  <div className="mt-10 text-center border-t border-emerald-200 pt-6">
+    <p className="text-sm font-semibold text-emerald-800 mb-2">
+      ⭐ Enjoyed your experience?
+    </p>
+    <p className="text-sm text-emerald-600 mb-4">
+      Scan to leave a quick Google review
+    </p>
+
+    <a
+      href="https://g.page/r/CaAvqoxfBUaUEAI/review"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src="/review-qr.png"
+        alt="Leave a Google Review"
+        className="mx-auto w-40 h-40 rounded-xl shadow-md hover:scale-105 transition"
+      />
+    </a>
+  </div>
+</div>
 
             <div className="rounded-[2rem] bg-white p-8 text-emerald-900 shadow-lg">
               <div className="text-xl font-semibold">Mortgage calculator</div>
