@@ -168,7 +168,9 @@ export default function MortgageBusinessWebsite() {
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-emerald-100">
               Whether you're buying your first home, remortgaging, or exploring buy-to-let options, I’m here to guide you every step of the way with clear advice, honest support, and a straightforward process.
-            </p>
+            <p className="mt-4 text-lg text-emerald-100">
+  Helping clients across the UK with clear, straightforward mortgage advice tailored to your needs.
+</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#contact"
