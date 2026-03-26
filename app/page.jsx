@@ -161,10 +161,10 @@ export default function MortgageBusinessWebsite() {
         <div className="relative mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-2 lg:px-8 lg:py-28">
           <div className="max-w-2xl text-white">
             <div className="mb-4 inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1 text-sm">
-              Trusted mortgage advice for buying, remortgaging, and buy-to-let
+              Trusted Mortgage Advisor in the UK
             </div>
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-  Trusted Mortgage Advisor in the UK – First-Time Buyers, Remortgages & Buy-to-Let
+  Mortgage advice for purchasing - First Time Buyers, Remortgaging, and buy-to-let
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-emerald-100">
               Whether you're buying your first home, remortgaging, or exploring buy-to-let options, I’m here to guide you every step of the way with clear advice, honest support, and a straightforward process.
